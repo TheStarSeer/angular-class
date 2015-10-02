@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <style>
+    .numberGroup1 {
+      margin: 5px;
+      padding: 5px;
+      border: solid blue;
+    }
+    .numberGroup2 {
+      margin: 5px;
+      padding: 5px;
+      border: solid red;
+    }
+    .numberGroup3 {
+      margin: 5px;
+      padding: 5px;
+      border: solid black;
+    }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div class="numberGroup1">
+        <label>First Number<label> <input type="input" id="add1">
+        <label>Second Number<label> <input type="input" id="add2">
+        <button id="addButton">Sum Values</button>
+        <div id="addTotal"></div>
+      </div>
+      <div class="numberGroup2">
+        <label>First Number<label> <input type="input" id="subtract1">
+        <label>Second Number<label> <input type="input" id="subtract2">
+        <button id="subtractButton">Subtract Values</button>
+        <div id="subtractTotal"></div>
+      </div>
+      <div class="numberGroup3">
+        <label>First Number<label> <input type="input" id="multiply1">
+        <label>Second Number<label> <input type="input" id="multiply2">
+        <button id="multiplyButton">Multiply Values</button>
+        <div id="multiplyTotal"></div>
+      </div>
+  </article>
+    <script>
+      document.getElementById('addButton').addEventListener('click', function() {
+      var addOne = document.getElementById('add1').value;
+      var addTwo = document.getElementById('add2').value;
+
+      var addTotalVariable = parseInt(addOne) + parseInt(addTwo);
+      document.getElementById('addTotal').innerHTML = "Result: " + addTotalVariable;
+      });
+
+      document.getElementById('subtractButton').addEventListener('click', function() {
+      var subtractOne = document.getElementById('subtract1').value;
+      var subtractTwo = document.getElementById('subtract2').value;
+
+      var subtractTotalVariable = parseInt(subtractOne) - parseInt(subtractTwo);
+      document.getElementById('subtractTotal').innerHTML = "Result: " + subtractTotalVariable;
+      });
+
+      document.getElementById('multiplyButton').addEventListener('click', function() {
+      var multiplyOne = document.getElementById('multiply1').value;
+      var multiplyTwo = document.getElementById('multiply2').value;
+
+      var multiplyTotalVariable = parseInt(multiplyOne) * parseInt(multiplyTwo);
+      document.getElementById('multiplyTotal').innerHTML = "Result:" + multiplyTotalVariable;
+      });
+
+    </script>
+  </body>
+</html>
