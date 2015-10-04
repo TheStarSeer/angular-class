@@ -1,0 +1,27 @@
+img {
+  height: 100px;
+  width: 100px;
+}
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  padding: 5px;
+}
+u {
+  font-size: 1.5em;
+}
+h1  {
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+.footer {
+  background-color: gray;
+  color: white;
+}
+
+#total-price {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
