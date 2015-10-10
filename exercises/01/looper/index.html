@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var arrImages = ['http://i.ytimg.com/vi/rLx4yzg-RTc/maxresdefault.jpg',
+      'https://i.ytimg.com/vi/rTy6NS7Bciw/maxresdefault.jpg',
+      'http://doubledragon.kontek.net/games/sdd/images/sddsnes1.gif'];
+    </script>
+    <style>
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="images">
+    </div>
+    <script type="text/javascript">
+      for (var i = 0; i < arrImages.length; i++) {
+        var imgElement = document.createElement('img');
+        imgElement.src = arrImages[i];
+        imgElement.classList.add('image');
+        document.getElementById('images').appendChild(imgElement);
+      }
+    </script>
+  </body>
+</html>
