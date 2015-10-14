@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Setup Refresher</title>
+  </head>
+  <body>
+    <div ng-controller="AdditionController">
+      <h1>The Sum</h1>
+      <input ng-model="firstSumNumber">
+      <input ng-model="secondSumNumber">
+      <label>=</label>
+      <label>{{ sum }}</label>
+      <button ng-click="sumFunction(firstSumNumber, secondSumNumber)">Sum</button>
+    </div>
+    <div ng-controller="MultiplyController">
+      <h1>The Multiplication</h1>
+      <input ng-model="firstProductNumber">
+      <input ng-model="secondProductNumber">
+      <label>=</label>
+      <label>{{ product }}</label>
+      <button ng-click="multiplyFunction()">Multiply</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
