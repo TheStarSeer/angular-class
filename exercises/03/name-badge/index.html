@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="MainApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div ng-controller="MainController" class="container">
+      <div class="border-group">
+        <div class="row center-block">
+          <div class="col-xs-6">
+            <input type="text" ng-model="firstNameTemp" class="form-control" value="First Name">
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" ng-model="lastNameTemp" value="Last Name">
+          </div>
+        </div>
+        <div class="row center-block">
+          <div class="col-xs-6">
+            <input type="text" class="form-control" ng-model="emailTemp" value="Email">
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" ng-model="placeOfBirthTemp" value="Place of Birth">
+          </div>
+        </div>
+        <div class="row center-block">
+          <div class="col-xs-6">
+            <input type="text" class="form-control" value="Phone" ng-model="phoneTemp">
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" value="Favorite Food" ng-model="favoriteFoodTemp">
+          </div>
+        </div>
+        <div class="row center-block">
+          <div class="col-xs-12 form-group">
+            <textarea class="form-control" ng-model="aboutYourselfTemp"></textarea>
+          </div>
+        </div>
+        <div class="row center-block">
+          <div class="col-xs-12 form-group">
+            <button ng-click="submitForm()" class="btn center-block btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="border-group">
+        <div class="row center-block header">
+          <div class="col-xs-12 form-group">
+            <label>Badge:</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>First Name: {{ firstName }}</label>
+          </div>
+          <div class="com-xs-6">
+            <label>Last Name: {{ lastName }}</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Email: {{ email }}</label>
+          </div>
+          <div class="com-xs-6">
+            <label>Place of birth: {{ placeOfBirth }}</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Phone: {{ phone }}</label>
+          </div>
+          <div class="com-xs-6">
+            <label>Favorite Food: {{ favoriteFood }}</label>
+          </div>
+        </div>
+        <div class="row center-block">
+          <div class="col-xs-12 form-group">
+            <textarea class="form-control">{{ aboutYourself }}</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"> </script>
+    <script src="app.js"></script>
+  </body>
+</html>
