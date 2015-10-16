@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="MainModule">
+  <head>
+    <meta charset="utf-8">
+    <title>Mom's Shopping List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+      body {
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-controller="MainController">
+      <h1>Mom's Shopping List</h1>
+      <input ng-model="item"></input>
+      <button ng-click="addItem()">add</button>
+      <div ng-repeat="singleItem in list track by $index">
+        <button ng-click="removeItem(singleItem)" class="btn-danger">x</button><label><p>{{ singleItem }}</p></label>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"> </script>
+    <script src="main.js"></script>
+  </body>
+</html>
