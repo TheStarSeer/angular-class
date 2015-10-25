@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  padding: 30px;
+}
+
+.red-button {
+  background-color: red;
+  border-color: red;
+}
+
+.red-button:focus {
+  background-color: red;
+  border-color: red;
+}
+
+.red-button:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.red-label {
+  color: red;
+  font-size: 2em;
+}
+
+.blue-label {
+  color: blue;
+  font-size: 2em;
+}
