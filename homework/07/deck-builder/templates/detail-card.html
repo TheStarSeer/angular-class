@@ -1,0 +1,40 @@
+<div class="card-detail row">
+  <div class="col-md-4">
+    <img ng-src="{{ returnedCard.editions[0].image_url }}" />
+  </div>
+  <div class="col-md-8 info-detail">
+    <h3>{{ returnedCard.name }}</h3>
+    <h4>Color</h4>
+    <p ng-repeat="color in returnedCard.colors">
+      {{ color }}
+    </p>
+    <h4>Cost</h4>
+    <p>
+      {{ returnedCard.cost }}
+    </p>
+    <h4>Description</h4>
+    <p>
+      {{ returnedCard.text }}
+    </p>
+    <h4 ng-show="returnedCard.editions[0].flavor != null">Card Quote</h4>
+    <p>
+      {{ returnedCard.editions[0].flavor }}
+    </p>
+    <h4>Set</h4>
+    <p>
+      {{ returnedCard.editions[0].set }}
+    </p>
+    <h4>Rarity</h4>
+    <p>
+      {{ returnedCard.editions[0].rarity }}
+    </p>
+    <h4 ng-show="returnedCard.power != null">Power</h4>
+    <p>
+      {{ returnedCard.power }}
+    </p>
+    <h4 ng-show="returnedCard.toughness != null">Toughness</h4>
+    <p>
+      {{ returnedCard.toughness }}
+    </p>
+  </div>
+</div>

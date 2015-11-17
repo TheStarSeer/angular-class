@@ -1,0 +1,49 @@
+select {
+display: block;
+margin: 0 auto;
+}
+
+.form-control {
+  width: 400px;
+}
+
+.header {
+  background-image: url('https://d2gg9evh47fn9z.cloudfront.net/thumb_COLOURBOX7218188.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60px;
+  width: 100%;
+  color: white;
+}
+
+.selection-form {
+  padding: 30px;
+}
+
+.display-cards img {
+  width: 200px;
+  height: 300px;
+}
+
+.row button {
+  margin-bottom: 30px;
+}
+
+.card-detail {
+  padding: 30px;
+}
+
+.card-detail .info-detail {
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.card-detail h3 {
+  text-align: center;
+}
+
+.card-detail img {
+  width: 400px;
+  height: 600px;
+}

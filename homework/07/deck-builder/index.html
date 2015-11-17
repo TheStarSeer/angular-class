@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="DeckBuilderModule">
+  <head>
+    <meta charset="utf-8">
+    <title>Magic Deck Builder</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body ng-controller="DeckBuilderController">
+    <div class="row">
+      <div class="col-xs-12 header text-center">
+        <h3>Magic the Gathering Deck Builder</h3>
+      </div>
+    </div>
+    <ng-view />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

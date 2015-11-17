@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-xs-12 text-center">
+    <h4>Select Your Deck Preferences</h4>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-6 selection-form">
+    <div class="form-group">
+      <label for="sel1">Select Color:</label>
+      <select class="form-control" ng-model="desiredColor" id="sel1">
+        <option>blue</option>
+        <option>red</option>
+        <option>black</option>
+        <option>green</option>
+        <option>white</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-md-6 selection-form">
+    <div class="form-group">
+      <label for="sel2">Select Card Cost:</label>
+      <select class="form-control" ng-model="desiredCost" id="sel2">
+        <option>Expensive</option>
+        <option>Standard</option>
+        <option>Cheap</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-xs-12">
+    <button class="btn btn-default" ng-click="getDeck()">
+      Get Deck
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2 col-xs-6 text-center display-cards" ng-repeat="element in returnedCards track by $index">
+    <a href="#/detail-page/ {{ element.id }}"><img ng-src="{{ element.editions[0].image_url }}"/></a>
+    <p>{{ element.name }}</p>
+  </div>
+</div>
