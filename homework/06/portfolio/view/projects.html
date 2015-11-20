@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row project-option text-center">
+      <div class="col-md-3 col-xs-6">
+        <a href="#/projects/1"><img id="imgOption1" ng-class="{'option-selected': intContent == 1}" src="http://honeyengineeringworks.com/wp-content/uploads/2014/12/profile-default.png" /></a>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="#/projects/2"><img id="imgOption2" ng-class="{'option-selected': intContent == 2}" src="http://honeyengineeringworks.com/wp-content/uploads/2014/12/profile-default.png" /></a>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="#/projects/3"><img id="imgOption3" ng-class="{'option-selected': intContent == 3}" src="http://honeyengineeringworks.com/wp-content/uploads/2014/12/profile-default.png" /></a>
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <a href="#/projects/4"><img id="imgOption4" ng-class="{'option-selected': intContent == 4}" src="http://honeyengineeringworks.com/wp-content/uploads/2014/12/profile-default.png" /></a>
+      </div>
+    </div>
+
+    <!-- Project Option -->
+    <div class="row text-center tab-pane" ng-switch on="intContent">
+      <div class="col-md-12" ng-switch-when="1">
+          <h2>Number 1 </h2>
+          <img src="http://lorempixel.com/400/400/cats/1" alt="Cats"/>
+          <p>"Number 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="col-md-12" ng-switch-when="2">
+          <h2>Number 2</h2>
+          <img src="http://globe-views.com/dcim/dreams/dog/dog-05.jpg" alt="Cats"/>
+          <p>"Number 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="col-md-12" ng-switch-when="3">
+          <h2>Number 3</h2>
+          <img src="http://lorempixel.com/400/400/cats/1" alt="Cats"/>
+          <p>"Number 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="col-md-12" ng-switch-when="4">
+          <h2>Number 4</h2>
+          <img src="http://lorempixel.com/400/400/cats/1" alt="Cats"/>
+          <p>"Number 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </div>
+</div>

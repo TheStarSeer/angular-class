@@ -1,0 +1,131 @@
+body {
+		margin: 0px;
+		padding: 0px;
+}
+
+.home-page-top {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('https://farm4.staticflickr.com/3927/15416884641_04cae3a97a_b.jpg');
+	color: white;
+	width: auto;
+	height: 700px;
+	padding-top: 100px;
+}
+
+.home-page-bottom {
+	width: auto;
+	height: auto;
+	padding-top: 50px;
+}
+
+.home-page-bottom img {
+	width: 150px;
+	height: 150px;
+	margin: 25px;
+}
+
+.home-page-bottom i {
+	font-size: 44px;
+	color: #4a4a4a
+}
+
+.home-page-bottom i:hover {
+	color: black;
+}
+
+.navbar {
+	background-color: #040d47;
+	margin: 0;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    background-color: #040d47;
+    font-size: 1.3em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #0aaef7;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+    color: #858590;
+}
+
+.default-button {
+    color: #858590 !important;
+}
+
+/* Project Option */
+.project-option {
+    margin: 50px;
+    padding: 0;
+    border: 0;
+}
+.project-option img {
+    background: #DADADA;
+    border-radius: 50%;
+		margin: 20px;
+		height: 150px;
+		width: 150px;
+}
+
+.project-option img:hover {
+    border: 2px solid black;
+}
+
+.option-selected {
+    border: 2px solid black;
+}
+
+/* Tab Content */
+.tab-pane p{
+	margin-top: 30px;
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 15px;
+	color: white;
+	background-color: #0aaef7;
+}
+
+.tab-pane img {
+		width: 90%;
+		height: 30%;
+		border-radius: 3px;
+}
+
+/* About Page Styling */
+
+.about-wrapper {
+	background-image: url('../assets/about-stars.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: auto;
+	width: auto;
+}
+
+.about-header {
+    margin-top: 50px;
+    padding: 0;
+    border: 0;
+		color: #0aaef7;
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #040d47;
+}
+
+#social i {
+	font-size: 40px;
+	color: #e7e7f4;
+}
+
+#social i:hover {
+	color: #0aaef7;
+}

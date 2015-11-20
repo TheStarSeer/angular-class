@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="PortfolioModule">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body ng-controller='IndexController'>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a id="nav-1" href="#/home" ng-class="isCurrentRoute('/home')">Home</a></li>
+        <li><a id="nav-2" href="#/about" ng-class="isCurrentRoute('/about')">About</a></li>
+        <li><a id="nav-3" href="#/projects" ng-class="isCurrentRoute('/projects')">Projects</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div ng-view></div>
+    <footer id="social">
+  		<div class="container">
+  			<div class="row text-center">
+  				<div class="col-xs-6">
+  					<a href="https://github.com/TheStarSeer"><i class="fa fa-github"></i></a>
+  				</div>
+  				<div class="col-xs-6">
+  					<a href="https://www.linkedin.com/in/phillipadamson"><i class="fa fa-linkedin"></i></a>
+  				</div>
+  			</div>
+  		</div>
+  	</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.15/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="controller/home-controller.js"></script>
+    <script src="controller/about-controller.js"></script>
+    <script src="controller/project-controller.js"></script>
+  </body>
+</html>
